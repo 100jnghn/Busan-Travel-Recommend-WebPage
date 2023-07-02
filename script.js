@@ -67,20 +67,23 @@ function promptPassword(commentElement, correctPassword) {
   }
 }
 
-
 function getCategoryText(category) {
-    switch (category) {
-        case "1":
-            return "밥";
-        case "2":
-            return "카페, 베이커리";
-        case "3":
-            return "숙소";
-        case "4":
-            return "가볼만한 곳";
-        default:
-            return "";
-    }
+  switch (category) {
+    case "1":
+      return "밥";
+    case "2":
+      return "카페, 베이커리";
+    case "3":
+      return "숙소";
+    case "4":
+      return "쇼핑";
+    case "5":
+      return "가볼만한 곳";
+    case "6":
+      return "기타";
+    default:
+      return "";
+  }
 }
 
 function deleteComment(commentElement) {

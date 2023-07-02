@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomment, Plz ~^ㅇ^~!</title>
+    <style>
+        #comments {
+            margin-top: 20px;
+        }
+    
+        .comment {
+            margin-bottom: 10px;
+            border: 3px solid #a3a3a3dd;
+            padding: 10px;
+            height: 60px;
+            overflow: auto;
+            font-size: 12px;
+        }
+    
+        .field {
+            display: inline-block;
+            width: 100px;
+            margin-right: 10px;
+        }
+    
+        .comment button {
+            background-color: #8e8b8b;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            float: left;
+        }
+    
+        .comment-content {
+            float: left;
+            margin-left: 10px;
+            width: calc(100% - 60px); /* Adjust the width as needed */
+            white-space: nowrap; /* Add this line to prevent line breaks */
+        }
+        .comment-reason {
+            margin-top: 10px; /* Adjust the margin-top value as needed */
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h2> 부산 여행 갑니다 </h2>
+    아무거나 다 추천 부탁
+    <hr>
+    <form id="myForm" >
+        <input type="text" placeholder="자기 name" size=10 maxlength="6">
+        <select name="div">
+            <option value="1" selected>밥</option>
+            <option value="2">카페, 베이커리</option>
+            <option value="3">숙소</option>
+            <option value="4">가볼만한 곳</option>
+            <option value="5">기타</option>
+        </select>
+        <input type="text" placeholder="저 어디 가야 할까요" size="14" maxlength="12">
+        <input type="text" placeholder="왜 때문이죠??" size="25">     
+        <input type="password" placeholder="password" size="8" maxlength="16"> 
+        <input type="submit" value="저장">
+    </form>
+
+    <script src="script.js"></script>
+
+    <div id="comments">
+        <!-- 여기에 제출한 내용 댓글처럼 작성됨 -->
+    </div>
+
+</body>
+</html>
